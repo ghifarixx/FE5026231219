@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Clients Love Us</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f7f5f2;
+      --card-bg: #ffffff;
+      --accent: #c8a96e;
+      --dark: #1a1a1a;
+      --muted: #777;
+      --logo-bg: #dfdbdb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg);
+      font-family: 'DM Sans', sans-serif;
+      color: var(--dark);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    .section-wrapper {
+      max-width: 1080px;
+      width: 100%;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      text-align: center;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      margin: 14px auto 0;
+    }
+
+    .testimonial-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 28px 24px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    }
+
+    .avatar {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      flex-shrink: 0;
+    }
+
+    .quote-mark {
+      font-size: 3rem;
+      line-height: 1;
+      color: var(--accent);
+      font-family: Georgia, serif;
+      margin-right: 4px;
+      vertical-align: -0.3em;
+    }
+
+    .testimonial-text {
+      font-size: 0.93rem;
+      color: #444;
+      line-height: 1.65;
+      margin-bottom: 14px;
+      font-style: italic;
+    }
+
+    .client-name {
+      font-weight: 700;
+      font-size: 0.88rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--dark);
+      margin-bottom: 2px;
+    }
+
+    .client-role {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* ===== LOGO BAR ===== */
+    .logo-bar {
+      background: var(--logo-bg);
+      border-radius: 10px;
+      padding: 18px 36px;
+      margin-top: 20px;
+    }
+
+    .logo-bar .row {
+      align-items: center;
+    }
+
+    .logo-item {
+      text-align: center;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 60px;
+    }
+
+    .logo-item:not(:last-child) {
+      border-right: 1px solid #eae6e6;
+    }
+
+    /* Gambar logo: tinggi tetap 40px, lebar proporsional */
+    .logo-item img {
+      height: 70px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      transition: filter 0.2s;
+      display: block;
+    }
+
+    .logo-item:hover img {
+      filter: grayscale(0%) brightness(1);
+    }
+
+    /* Teks fallback logo */
+    .logo-item span {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      color: #aaa;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="section-wrapper">
+
+    <h2 class="section-title">Our Clients Love Us</h2>
+
+    <div class="row">
+      <!-- Testimonial 1 -->
+      <div class="col-12 col-md-6">
+        <div class="testimonial-card">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.KXVzrCuBM1YFm8jfn1vVLAHaE8?pid=Api&h=220&P=0"
+            alt="Cristiano Ronaldo" class="avatar">
+          <div>
+            <p class="testimonial-text"><span class="quote-mark">"</span>Produk ini benar-benar mengubah cara saya bekerja. Kualitasnya luar biasa dan pelayanannya sangat memuaskan. Saya tidak akan beralih ke produk lain!</p>
+            <div class="client-name">Cristiano Ronaldo</div>
+            <div class="client-role">Professional Footballer</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="col-12 col-md-6">
+        <div class="testimonial-card">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.Vsqt1j11NChBGLtoBKyMSAHaE7?pid=Api&h=220&P=0" alt="Lionel Messi"
+            class="avatar">
+          <div>
+            <p class="testimonial-text"><span class="quote-mark">"</span>Saya sudah mencoba banyak produk serupa, tapi yang ini jauh lebih unggul. Hasilnya terasa nyata sejak pertama kali digunakan. Sangat direkomendasikan!</p>
+            <div class="client-name">Lionel Messi</div>
+            <div class="client-role">Professional Footballer</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="col-12 col-md-6">
+        <div class="testimonial-card">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.EYxZaZ6Zo9eZy1Rure61ZQHaE8?pid=Api&h=220&P=0" alt="Neymar Jr"
+            class="avatar">
+          <div>
+            <p class="testimonial-text"><span class="quote-mark">"</span>Tim support-nya responsif dan selalu siap membantu. Pengalaman berbelanja di sini menyenangkan dan produknya datang tepat waktu dengan kondisi sempurna.</p>
+            <div class="client-name">Neymar Jr</div>
+            <div class="client-role">Professional Footballer</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="col-12 col-md-6">
+        <div class="testimonial-card">
+          <img
+            src="https://cdn.britannica.com/45/273345-050-7B263FB8/Vinicius-Junior-Real-Madrid-football-soccer-player-UEFA-league-knockout--play-off-against-Manchester-City-2024-25.jpg"
+            alt="Vinicius Junior" class="avatar">
+          <div>
+            <p class="testimonial-text"><span class="quote-mark">"</span>Kualitas produk ini melampaui ekspektasi saya. Bahan berkualitas tinggi, desain elegan, dan harganya sangat sepadan dengan apa yang didapatkan.</p>
+            <div class="client-name">Vinicius Junior</div>
+            <div class="client-role">Professional Footballer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo Bar -->
+    <div class="logo-bar">
+      <div class="row no-gutters">
+        <div class="col logo-item">
+          <img src="https://freepnglogo.com/images/all_img/1732594212_real-madrid-fc-logo-png.png" alt="Logo 1">
+        </div>
+        <div class="col logo-item">
+          <img src="https://pngimg.com/uploads/fcb_logo/fcb_logo_PNG23.png" alt="Logo 2">
+        </div>
+        <div class="col logo-item">
+          <img src="http://1000logos.net/wp-content/uploads/2016/10/Arsenal-Logo.png" alt="Logo 3">
+        </div>
+        <div class="col logo-item">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.PTF1ajqMS18VofhwTOZNqQHaEo?pid=Api&h=220&P=0" alt="Logo 4">
+        </div>
+        <div class="col logo-item">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.HpRFXGjaiSmlTYFPDCjB_gHaEK?pid=Api&h=220&P=0" alt="Logo 5">
+        </div>
+        <div class="col logo-item" style="border-right:none;">
+          <img src="https://logosmarcas.net/wp-content/uploads/2020/08/Atletico-Madrid-Simbolo.jpg" alt="Logo 6">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
